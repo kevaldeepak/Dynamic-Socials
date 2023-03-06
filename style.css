@@ -5,26 +5,31 @@
 
 body {
     font-family:Helvetica,Arial, sans-serif;
+    background: rgb(233, 196, 196);
 }
 
 #socials-container {
     padding: 0 50px;
     padding-top: 75px;
-    width: 150px;
-    border: 1px solid black;
+    width: 180px;
+    margin: auto;
+    margin-top: 83vh;
+    position: relative;
 }
 
 
 #socials-header {
     height: 50px;
-    width: 150px;
-    background: #303030;
+    width: 180px;
+    background: #312f2f;
     border-radius: 25px;
     color: #fff;
     display: inline-flex;
     align-items: center;
     position: relative;
     z-index: 2;
+    border: 2px solid #312f2f;
+    transition: all 0.3s;
 }
 
 #socials-header p {
@@ -39,6 +44,7 @@ body {
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
     display: inline-flex;
+    border : #312f2f 0px solid;
 }
 
 .social-link p {
@@ -49,8 +55,9 @@ body {
     position: absolute;
     margin-top: -60px;
     opacity: 0; /* change */
+    
     transition: all 0.3s, margin-left 1s ease-in-out;
-    margin-left: -20px;
+    margin-left: -5px;
 
 }
 
@@ -58,40 +65,5 @@ body {
     text-decoration: none;
     color: #fff;
     position: absolute;
+    
 }
-/*
-#links{
-    animation-name: social-1R;
-    animation-duration: 0.3s;
-    animation-fill-mode: backwards;
-}
-
-#socials-container:hover #links {
-    animation-name: social-1;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    opacity: 1;
-}
-
-@keyframes social-1 {
-    0% {
-        margin-top: -50px;
-        opacity: 0;
-    }
-    100% {
-        margin-top: -100px;
-        opacity: 1;
-    }
-}
-
-@keyframes social-1R {
-    0% {
-        margin-top: -100px;
-        opacity: 1;
-    }
-    100% {
-        margin-top: -50px;
-        opacity: 0;
-    }
-}
-*/
